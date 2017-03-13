@@ -39,7 +39,6 @@ PODS:
     - UMengUShare/Core
   - UMengUShare/UI (6.3.0):
     - UMengUShare/Core
-  - YQSlideMenController (0.0.5)
 
 DEPENDENCIES:
   - AFNetworking
@@ -53,7 +52,6 @@ DEPENDENCIES:
   - UMengUShare/Social/Sina (~> 6.1)
   - UMengUShare/Social/WeChat (~> 6.1)
   - UMengUShare/UI (~> 6.1)
-  - YQSlideMenController
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -67,8 +65,7 @@ SPEC CHECKSUMS:
   PYSearch: 0e34e7326d482e659d0eca9d81d6ef5f8179e3b7
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   UMengUShare: b208ac3bcf1f63d11a100b359990e9d77a0f2085
-  YQSlideMenController: 0c660ac86c2c9247862bd15dd8b6e6b19e2a01ec
 
-PODFILE CHECKSUM: e0eeaa04cc8c0e08438a975efff652876dfaf8b8
+PODFILE CHECKSUM: 599d9af40526c53e857531101c1a8773f28df769
 
 COCOAPODS: 1.1.1

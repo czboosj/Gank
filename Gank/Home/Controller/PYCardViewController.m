@@ -18,7 +18,7 @@
 #import "UIView+PYExtension.h"
 #import "PYRefreshHeader.h"
 #import "PYImage.h"
-#import <JHUD.h>
+#import "PYHUD.h"
 #import <AFNetworkReachabilityManager.h>
 
 #define RGBAColor(r,g,b,a)  [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
@@ -47,9 +47,9 @@ static CGFloat collectionHeight;
 @property (nonatomic, assign) NSInteger earchCount;
 
 /** 网络加载失败提示 */
-@property (nonatomic, strong) JHUD *loadFailView;
+@property (nonatomic, strong) PYHUD *loadFailView;
 /** 网络加载提示 */
-@property (nonatomic, strong) JHUD *loadingView;
+@property (nonatomic, strong) PYHUD *loadingView;
 /** 记录当前网络状态 */
 @property (nonatomic, assign) AFNetworkReachabilityStatus currentNetworkStatus;
 
@@ -67,17 +67,18 @@ static CGFloat collectionHeight;
     return _rescouceGroups;
 }
 
-- (JHUD *)loadFailView
+- (PYHUD *)loadFailView
 {
     if (!_loadFailView) {
-        JHUD *loadFailView = [[JHUD alloc]initWithFrame:CGRectMake(15, 5, self.view.bounds.size.width - 10, self.view.bounds.size.height)];
+        PYHUD *loadFailView = [[PYHUD alloc]initWithFrame:CGRectMake(15, 5, self.view.bounds.size.width - 10, self.view.bounds.size.height)];
         loadFailView.indicatorBackGroundColor = [UIColor clearColor];
         loadFailView.indicatorForegroundColor = self.typeColor;
         loadFailView.messageLabel.text = @"网络迷路了...\n快点我刷新下";
         loadFailView.backgroundColor = [UIColor whiteColor];
         loadFailView.customImage = [UIImage imageNamed:@"networkError"];
         __weak typeof(self) weakSelf = self;
-        [loadFailView refreshWhenNwrworkError:^(JHUD *hud) {
+    
+        [loadFailView refreshWhenNwrworkError:^(PYHUD *hud) {
             [weakSelf loadData:self.resources.count == 0];
         }];
         _loadFailView = loadFailView;
@@ -85,10 +86,10 @@ static CGFloat collectionHeight;
     return _loadFailView;
 }
 
-- (JHUD *)loadingView
+- (PYHUD *)loadingView
 {
     if (!_loadingView) {
-        JHUD *loadingView = [[JHUD alloc]initWithFrame:CGRectMake(15, 5, self.view.bounds.size.width - 10, self.view.bounds.size.height)];
+        PYHUD *loadingView = [[PYHUD alloc]initWithFrame:CGRectMake(15, 5, self.view.bounds.size.width - 10, self.view.bounds.size.height)];
         loadingView.indicatorBackGroundColor = [UIColor clearColor];
         loadingView.indicatorForegroundColor = self.typeColor;
         loadingView.messageLabel.text = nil;

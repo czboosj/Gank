@@ -48,6 +48,7 @@
     cell.photosView.py_x = cell.titleLabel.py_x;
     cell.photosView.showDuration = 0.25;
     cell.photosView.hiddenDuration = 0.15;
+    cell.photosView.autoRotateImage = NO;
     return cell;
 }
 

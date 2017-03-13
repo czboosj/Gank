@@ -31,7 +31,6 @@
 		6B25BA6F1E6401ED008BC23F /* CardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B25BA6B1E6401ED008BC23F /* CardLayout.m */; };
 		6B25BA701E6401ED008BC23F /* CardSelectedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B25BA6D1E6401ED008BC23F /* CardSelectedLayout.m */; };
 		6B25BA731E640206008BC23F /* PYCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B25BA721E640206008BC23F /* PYCardViewController.m */; };
-		6B25BA7A1E64225C008BC23F /* PYRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B25BA791E64225C008BC23F /* PYRefreshHeader.m */; };
 		6B25BA7D1E6440F1008BC23F /* PYResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B25BA7C1E6440F1008BC23F /* PYResource.m */; };
 		6B25BA811E644619008BC23F /* PYResourceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B25BA7F1E644619008BC23F /* PYResourceCell.m */; };
 		6B25BA851E64715D008BC23F /* NSString+PYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B25BA841E64715D008BC23F /* NSString+PYExtension.m */; };
@@ -43,6 +42,11 @@
 		6B25BA931E65640D008BC23F /* PYCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B25BA921E65640D008BC23F /* PYCalendarView.m */; };
 		6B25BA991E66A255008BC23F /* YJWebProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B25BA981E66A255008BC23F /* YJWebProgressLayer.m */; };
 		6B25BA9C1E66A265008BC23F /* NSTimer+addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B25BA9B1E66A265008BC23F /* NSTimer+addition.m */; };
+		6B8812B31E763094007A435A /* PYHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8812B21E763094007A435A /* PYHUD.m */; };
+		6B8812B61E7631C1007A435A /* PYRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8812B51E7631C1007A435A /* PYRefreshHeader.m */; };
+		6B8812C11E76396B007A435A /* UIViewController+YQSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8812BD1E76396B007A435A /* UIViewController+YQSlideMenu.m */; };
+		6B8812C21E76396B007A435A /* YQSlideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8812BF1E76396B007A435A /* YQSlideMenuController.m */; };
+		6B8812C31E76396B007A435A /* YQSlideMenuImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8812C01E76396B007A435A /* YQSlideMenuImages.xcassets */; };
 		6BEDE8B41E66D22E00A0D377 /* UIBarButtonItem+PYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEDE8B31E66D22E00A0D377 /* UIBarButtonItem+PYExtension.m */; };
 		6BEDE9001E6998A600A0D377 /* PYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEDE8FF1E6998A600A0D377 /* PYImage.m */; };
 		9668F40BFDB6D51B45590F57 /* libPods-GankUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4AAEC0DA0805D0D37128E4 /* libPods-GankUITests.a */; };
@@ -112,8 +116,6 @@
 		6B25BA6D1E6401ED008BC23F /* CardSelectedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardSelectedLayout.m; sourceTree = "<group>"; };
 		6B25BA711E640206008BC23F /* PYCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYCardViewController.h; sourceTree = "<group>"; };
 		6B25BA721E640206008BC23F /* PYCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYCardViewController.m; sourceTree = "<group>"; };
-		6B25BA781E64225C008BC23F /* PYRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYRefreshHeader.h; sourceTree = "<group>"; };
-		6B25BA791E64225C008BC23F /* PYRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYRefreshHeader.m; sourceTree = "<group>"; };
 		6B25BA7B1E6440F1008BC23F /* PYResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYResource.h; sourceTree = "<group>"; };
 		6B25BA7C1E6440F1008BC23F /* PYResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYResource.m; sourceTree = "<group>"; };
 		6B25BA7E1E644619008BC23F /* PYResourceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYResourceCell.h; sourceTree = "<group>"; };
@@ -132,6 +134,15 @@
 		6B25BA981E66A255008BC23F /* YJWebProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJWebProgressLayer.m; sourceTree = "<group>"; };
 		6B25BA9A1E66A265008BC23F /* NSTimer+addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+addition.h"; sourceTree = "<group>"; };
 		6B25BA9B1E66A265008BC23F /* NSTimer+addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+addition.m"; sourceTree = "<group>"; };
+		6B8812B11E763094007A435A /* PYHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYHUD.h; sourceTree = "<group>"; };
+		6B8812B21E763094007A435A /* PYHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYHUD.m; sourceTree = "<group>"; };
+		6B8812B41E7631C1007A435A /* PYRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYRefreshHeader.h; sourceTree = "<group>"; };
+		6B8812B51E7631C1007A435A /* PYRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYRefreshHeader.m; sourceTree = "<group>"; };
+		6B8812BC1E76396B007A435A /* UIViewController+YQSlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YQSlideMenu.h"; sourceTree = "<group>"; };
+		6B8812BD1E76396B007A435A /* UIViewController+YQSlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YQSlideMenu.m"; sourceTree = "<group>"; };
+		6B8812BE1E76396B007A435A /* YQSlideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQSlideMenuController.h; sourceTree = "<group>"; };
+		6B8812BF1E76396B007A435A /* YQSlideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQSlideMenuController.m; sourceTree = "<group>"; };
+		6B8812C01E76396B007A435A /* YQSlideMenuImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YQSlideMenuImages.xcassets; sourceTree = "<group>"; };
 		6BEDE8B21E66D22E00A0D377 /* UIBarButtonItem+PYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+PYExtension.h"; sourceTree = "<group>"; };
 		6BEDE8B31E66D22E00A0D377 /* UIBarButtonItem+PYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+PYExtension.m"; sourceTree = "<group>"; };
 		6BEDE8FE1E6998A600A0D377 /* PYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImage.h; sourceTree = "<group>"; };
@@ -233,6 +244,7 @@
 			children = (
 				6B25B9E31E63C25B008BC23F /* AppDelegate.h */,
 				6B25B9E41E63C25B008BC23F /* AppDelegate.m */,
+				6B8812BA1E76394F007A435A /* Lib */,
 				6B25BA741E6421FD008BC23F /* Main */,
 				6B25BA771E6421FD008BC23F /* Tool */,
 				6B25BA611E63F875008BC23F /* Gategory */,
@@ -388,10 +400,32 @@
 		6B25BA771E6421FD008BC23F /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				6B25BA781E64225C008BC23F /* PYRefreshHeader.h */,
-				6B25BA791E64225C008BC23F /* PYRefreshHeader.m */,
+				6B8812B41E7631C1007A435A /* PYRefreshHeader.h */,
+				6B8812B51E7631C1007A435A /* PYRefreshHeader.m */,
+				6B8812B11E763094007A435A /* PYHUD.h */,
+				6B8812B21E763094007A435A /* PYHUD.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		6B8812BA1E76394F007A435A /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				6B8812BB1E76396B007A435A /* YQSlideMenuController */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		6B8812BB1E76396B007A435A /* YQSlideMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				6B8812BC1E76396B007A435A /* UIViewController+YQSlideMenu.h */,
+				6B8812BD1E76396B007A435A /* UIViewController+YQSlideMenu.m */,
+				6B8812BE1E76396B007A435A /* YQSlideMenuController.h */,
+				6B8812BF1E76396B007A435A /* YQSlideMenuController.m */,
+				6B8812C01E76396B007A435A /* YQSlideMenuImages.xcassets */,
+			);
+			path = YQSlideMenuController;
 			sourceTree = "<group>";
 		};
 		9FECF6B7AF880CBEDD2CB132 /* Frameworks */ = {
@@ -528,6 +562,7 @@
 			files = (
 				6B02727E1E72979500A30D9E /* Launch.mov in Resources */,
 				6B0272661E6EB51C00A30D9E /* PYSearchResourceCell.xib in Resources */,
+				6B8812C31E76396B007A435A /* YQSlideMenuImages.xcassets in Resources */,
 				6B25B9F01E63C25B008BC23F /* LaunchScreen.storyboard in Resources */,
 				6B25B9ED1E63C25B008BC23F /* Assets.xcassets in Resources */,
 			);
@@ -696,25 +731,28 @@
 				6B25B9E51E63C25B008BC23F /* AppDelegate.m in Sources */,
 				6B25BA661E63F894008BC23F /* UIColor+PYExtension.m in Sources */,
 				6B25BA9C1E66A265008BC23F /* NSTimer+addition.m in Sources */,
+				6B8812B31E763094007A435A /* PYHUD.m in Sources */,
 				6B25BA701E6401ED008BC23F /* CardSelectedLayout.m in Sources */,
 				6BEDE8B41E66D22E00A0D377 /* UIBarButtonItem+PYExtension.m in Sources */,
-				6B25BA7A1E64225C008BC23F /* PYRefreshHeader.m in Sources */,
 				6B25BA731E640206008BC23F /* PYCardViewController.m in Sources */,
 				6B0272771E7173C100A30D9E /* PYLaunchVideoController.m in Sources */,
 				6B25BA991E66A255008BC23F /* YJWebProgressLayer.m in Sources */,
 				6B25BA901E654824008BC23F /* PYPageTitleContentView.m in Sources */,
 				6B25B9E21E63C25B008BC23F /* main.m in Sources */,
 				6B25BA5D1E63F628008BC23F /* PYHomeViewController.m in Sources */,
+				6B8812B61E7631C1007A435A /* PYRefreshHeader.m in Sources */,
 				6B25BA6E1E6401ED008BC23F /* CardCellCollectionViewCell.m in Sources */,
 				6B0272741E70F06D00A30D9E /* PYMenuViewController.m in Sources */,
 				6B25BA931E65640D008BC23F /* PYCalendarView.m in Sources */,
 				6B25BA7D1E6440F1008BC23F /* PYResource.m in Sources */,
 				6BEDE9001E6998A600A0D377 /* PYImage.m in Sources */,
+				6B8812C21E76396B007A435A /* YQSlideMenuController.m in Sources */,
 				6B25BA601E63F664008BC23F /* PYPageTitleView.m in Sources */,
 				6B0272651E6EB51C00A30D9E /* PYSearchResourceCell.m in Sources */,
 				6B25BA811E644619008BC23F /* PYResourceCell.m in Sources */,
 				6B25BA671E63F894008BC23F /* UIView+PYExtension.m in Sources */,
 				6B25BA6F1E6401ED008BC23F /* CardLayout.m in Sources */,
+				6B8812C11E76396B007A435A /* UIViewController+YQSlideMenu.m in Sources */,
 				6B02727A1E7173D900A30D9E /* PYWebController.m in Sources */,
 				6B25BA851E64715D008BC23F /* NSString+PYExtension.m in Sources */,
 			);

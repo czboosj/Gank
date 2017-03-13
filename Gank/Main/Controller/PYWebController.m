@@ -12,7 +12,7 @@
 #import <UMengUShare/UShareUI/UMSocialUIManager.h>
 #import "PYResource.h"
 #import "UIBarButtonItem+PYExtension.h"
-#import <JHUD.h>
+#import "PYHUD.h"
 #import <WebKit/WebKit.h>
 
 @interface PYWebController () <WKNavigationDelegate>
@@ -21,7 +21,7 @@
 /** 加载网页 */
 @property (nonatomic, strong) WKWebView *webView;
 /** 网络加载失败提示 */
-@property (nonatomic, strong) JHUD *loadFailView;
+@property (nonatomic, strong) PYHUD *loadFailView;
 /** 当前请求 */
 @property (nonatomic, strong) NSURLRequest *request;
 
@@ -29,16 +29,16 @@
 
 @implementation PYWebController
 
-- (JHUD *)loadFailView
+- (PYHUD *)loadFailView
 {
     if (!_loadFailView) {
-        JHUD *loadFailView = [[JHUD alloc]initWithFrame:self.view.bounds];
+        PYHUD *loadFailView = [[PYHUD alloc]initWithFrame:self.view.bounds];
         loadFailView.indicatorBackGroundColor = [UIColor clearColor];
         loadFailView.messageLabel.text = @"网络迷路了...\n快点我刷新下";
         loadFailView.backgroundColor = [UIColor whiteColor];
         loadFailView.customImage = [UIImage imageNamed:@"networkError"];
         __weak typeof(self) weakSelf = self;
-        [loadFailView refreshWhenNwrworkError:^(JHUD *hud) {
+        [loadFailView refreshWhenNwrworkError:^(PYHUD *hud) {
             [weakSelf.webView loadRequest:self.request];
         }];
         _loadFailView = loadFailView;

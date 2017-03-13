@@ -10,7 +10,7 @@
 #import "PYHomeViewController.h"
 #import <SDWebImage/SDImageCache.h>
 #import <SDWebImage/SDWebImageManager.h>
-#import <YQSlideMenController/YQSlideMenuController.h>
+#import "YQSlideMenuController.h"
 #import "UIColor+PYExtension.h"
 #import <UMSocialCore/UMSocialCore.h>
 #import <AFNetworking/AFHTTPSessionManager.h>

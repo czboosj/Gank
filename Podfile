@@ -11,7 +11,6 @@ target 'Gank' do
   pod "PYPhotoBrowser"
   pod "PYSearch"
   pod "AFNetworking"
-  pod 'YQSlideMenController'
   pod 'JHUD'
   
   # U-Share SDKcleaning UI模块（分享面板，建议添加）

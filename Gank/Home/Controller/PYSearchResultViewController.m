@@ -13,7 +13,7 @@
 #import <MJRefresh.h>
 #import "PYSearchResourceCell.h"
 #import "PYWebController.h"
-#import <JHUD.h>
+#import "PYHUD.h"
 
 @interface PYSearchResultViewController ()
 
@@ -22,12 +22,12 @@
 /** 当前页数 */
 @property (nonatomic, assign) NSInteger currentPage;
 /** 搜索结果为空 */
-@property (nonatomic, strong) JHUD *emptyResultView;
+@property (nonatomic, strong) PYHUD *emptyResultView;
 
 /** 网络加载失败提示 */
-@property (nonatomic, strong) JHUD *loadFailView;
+@property (nonatomic, strong) PYHUD *loadFailView;
 /** 网络加载提示 */
-@property (nonatomic, strong) JHUD *loadingView;
+@property (nonatomic, strong) PYHUD *loadingView;
 /** 记录当前网络状态 */
 @property (nonatomic, assign) AFNetworkReachabilityStatus currentNetworkStatus;
 /** 类型 */
@@ -37,10 +37,10 @@
 
 @implementation PYSearchResultViewController
 
-- (JHUD *)emptyResultView
+- (PYHUD *)emptyResultView
 {
     if (!_emptyResultView) {
-        JHUD *emptyResultView = [[JHUD alloc]initWithFrame:CGRectMake(15, 5, self.view.bounds.size.width - 10, self.view.bounds.size.height)];
+        PYHUD *emptyResultView = [[PYHUD alloc]initWithFrame:CGRectMake(15, 5, self.view.bounds.size.width - 10, self.view.bounds.size.height)];
         emptyResultView.indicatorBackGroundColor = [UIColor clearColor];
         emptyResultView.messageLabel.text = @"换个词、有惊喜！";
         emptyResultView.backgroundColor = [UIColor whiteColor];
@@ -50,16 +50,16 @@
     return _emptyResultView;
 }
 
-- (JHUD *)loadFailView
+- (PYHUD *)loadFailView
 {
     if (!_loadFailView) {
-        JHUD *loadFailView = [[JHUD alloc]initWithFrame:CGRectMake(15, 5, self.view.bounds.size.width - 10, self.view.bounds.size.height)];
+        PYHUD *loadFailView = [[PYHUD alloc]initWithFrame:CGRectMake(15, 5, self.view.bounds.size.width - 10, self.view.bounds.size.height)];
         loadFailView.indicatorBackGroundColor = [UIColor clearColor];
         loadFailView.messageLabel.text = @"网络迷路了...\n快点我刷新下";
         loadFailView.backgroundColor = [UIColor whiteColor];
         loadFailView.customImage = [UIImage imageNamed:@"networkError"];
         __weak typeof(self) weakSelf = self;
-        [loadFailView refreshWhenNwrworkError:^(JHUD *hud) {
+        [loadFailView refreshWhenNwrworkError:^(PYHUD *hud) {
             [weakSelf loadMoreData:self.searchResources.count == 0];
         }];
         _loadFailView = loadFailView;
@@ -67,10 +67,10 @@
     return _loadFailView;
 }
 
-- (JHUD *)loadingView
+- (PYHUD *)loadingView
 {
     if (!_loadingView) {
-        JHUD *loadingView = [[JHUD alloc]initWithFrame:self.view.bounds];
+        PYHUD *loadingView = [[PYHUD alloc]initWithFrame:self.view.bounds];
         loadingView.indicatorBackGroundColor = [UIColor clearColor];
         loadingView.indicatorForegroundColor = [UIColor darkGrayColor];
         loadingView.messageLabel.text = nil;

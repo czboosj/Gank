@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <YQSlideMenController/YQSlideMenuController.h>
+#import "YQSlideMenuController.h"
 
 @interface PYHomeViewController : UIViewController <YQContentViewControllerDelegate>
 

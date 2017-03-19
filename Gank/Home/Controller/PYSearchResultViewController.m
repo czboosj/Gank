@@ -115,7 +115,7 @@
         URLStr = [NSString stringWithFormat:@"http://gank.io/api/search/query/listview/category/%@/count/10/page/%zd", self.searchText, self.currentPage];
     }
     NSString *encodedString = [URLStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    [mgr GET:encodedString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [mgr GET:encodedString parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         // 取出数组
         NSArray *results = responseObject[@"results"];
         if (results.count == 0) {

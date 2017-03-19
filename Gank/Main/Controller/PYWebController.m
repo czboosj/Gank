@@ -71,11 +71,14 @@
     
     // 设置导航栏
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem py_itemWithViewController:self action:@selector(back) image:@"back_normal" highlightImage:nil];
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem py_itemWithViewController:self action:@selector(share) image:@"share_normal" highlightImage:nil];
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.title = self.webTitle.length > 0 ? self.webTitle : self.resource.type;
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+    
+    if(!self.resource) return; // 只有资源可以分享
+    
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem py_itemWithViewController:self action:@selector(share) image:@"share_normal" highlightImage:nil];
 }
 
 - (void)share

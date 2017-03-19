@@ -127,7 +127,7 @@ static CGFloat collectionHeight;
         self.resources = [NSMutableArray array];
     }
     [self.loadFailView hide];
-    [HTTPManager GET:encodedString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) { // 请求成功
+    [HTTPManager GET:encodedString parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) { // 请求成功
         // 取出数组
         NSArray *results = responseObject[@"results"];
         if (results.count == 0) return;
@@ -146,7 +146,7 @@ static CGFloat collectionHeight;
             NSMutableArray *tempM = [NSMutableArray array];
             for (NSString *imageUrl in resource.images) {
                 PYImage *imageModel = [[PYImage alloc] init];
-                [mgr GET:[NSString stringWithFormat:@"%@?imageInfo", imageUrl] parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                [mgr GET:[NSString stringWithFormat:@"%@?imageInfo", imageUrl] parameters:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
                     imageCount--;
                     // 缩略图地址
                     imageModel.thumbUrl = [NSString stringWithFormat:@"%@?imageView2/0/w/400/format/png", imageUrl];

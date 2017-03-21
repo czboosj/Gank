@@ -1,6 +1,15 @@
 ## Gank集中营
 📱一款追求全新用户体验的[干货集中营](http://gank.io/) iOS客户端
 
+### App Store
+
+<a target='_blank' href='https://itunes.apple.com/app/id1214308741'>
+<img src='http://ww2.sinaimg.cn/large/0060lm7Tgw1f1hgrs1ebwj308102q0sp.jpg' width='144' height='49' />
+</a>
+
+<img src="https://github.com/iphone5solo/learngit/raw/master/imagesForGank/AppStoreQRCode.png" width="144"> 
+
+### 应用演示
 <img src="https://github.com/iphone5solo/learngit/raw/master/imagesForGank/Gank.gif" width="375"> 
 
 

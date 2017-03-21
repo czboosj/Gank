@@ -16,7 +16,6 @@
 		6B0272741E70F06D00A30D9E /* PYMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0272731E70F06D00A30D9E /* PYMenuViewController.m */; };
 		6B0272771E7173C100A30D9E /* PYLaunchVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0272761E7173C100A30D9E /* PYLaunchVideoController.m */; };
 		6B02727A1E7173D900A30D9E /* PYWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0272791E7173D900A30D9E /* PYWebController.m */; };
-		6B02727E1E72979500A30D9E /* Launch.mov in Resources */ = {isa = PBXBuildFile; fileRef = 6B02727D1E72979500A30D9E /* Launch.mov */; };
 		6B25B9E21E63C25B008BC23F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B25B9E11E63C25B008BC23F /* main.m */; };
 		6B25B9E51E63C25B008BC23F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B25B9E41E63C25B008BC23F /* AppDelegate.m */; };
 		6B25B9ED1E63C25B008BC23F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B25B9EC1E63C25B008BC23F /* Assets.xcassets */; };
@@ -47,6 +46,7 @@
 		6B8812C11E76396B007A435A /* UIViewController+YQSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8812BD1E76396B007A435A /* UIViewController+YQSlideMenu.m */; };
 		6B8812C21E76396B007A435A /* YQSlideMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B8812BF1E76396B007A435A /* YQSlideMenuController.m */; };
 		6B8812C31E76396B007A435A /* YQSlideMenuImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8812C01E76396B007A435A /* YQSlideMenuImages.xcassets */; };
+		6BC163631E81738600765286 /* Launch.mov in Resources */ = {isa = PBXBuildFile; fileRef = 6BC163621E81738600765286 /* Launch.mov */; };
 		6BEDE8B41E66D22E00A0D377 /* UIBarButtonItem+PYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEDE8B31E66D22E00A0D377 /* UIBarButtonItem+PYExtension.m */; };
 		6BEDE9001E6998A600A0D377 /* PYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEDE8FF1E6998A600A0D377 /* PYImage.m */; };
 		9668F40BFDB6D51B45590F57 /* libPods-GankUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4AAEC0DA0805D0D37128E4 /* libPods-GankUITests.a */; };
@@ -86,7 +86,6 @@
 		6B0272761E7173C100A30D9E /* PYLaunchVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYLaunchVideoController.m; sourceTree = "<group>"; };
 		6B0272781E7173D900A30D9E /* PYWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYWebController.h; sourceTree = "<group>"; };
 		6B0272791E7173D900A30D9E /* PYWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYWebController.m; sourceTree = "<group>"; };
-		6B02727D1E72979500A30D9E /* Launch.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = Launch.mov; path = ../Launch.mov; sourceTree = "<group>"; };
 		6B25B9DD1E63C25B008BC23F /* Gank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B25B9E11E63C25B008BC23F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B25B9E31E63C25B008BC23F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -143,6 +142,7 @@
 		6B8812BE1E76396B007A435A /* YQSlideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQSlideMenuController.h; sourceTree = "<group>"; };
 		6B8812BF1E76396B007A435A /* YQSlideMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQSlideMenuController.m; sourceTree = "<group>"; };
 		6B8812C01E76396B007A435A /* YQSlideMenuImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = YQSlideMenuImages.xcassets; sourceTree = "<group>"; };
+		6BC163621E81738600765286 /* Launch.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Launch.mov; sourceTree = "<group>"; };
 		6BEDE8B21E66D22E00A0D377 /* UIBarButtonItem+PYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+PYExtension.h"; sourceTree = "<group>"; };
 		6BEDE8B31E66D22E00A0D377 /* UIBarButtonItem+PYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+PYExtension.m"; sourceTree = "<group>"; };
 		6BEDE8FE1E6998A600A0D377 /* PYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYImage.h; sourceTree = "<group>"; };
@@ -258,7 +258,7 @@
 		6B25B9E01E63C25B008BC23F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6B02727D1E72979500A30D9E /* Launch.mov */,
+				6BC163621E81738600765286 /* Launch.mov */,
 				6B25B9EC1E63C25B008BC23F /* Assets.xcassets */,
 				6B25B9EE1E63C25B008BC23F /* LaunchScreen.storyboard */,
 				6B25B9F11E63C25B008BC23F /* Info.plist */,
@@ -560,11 +560,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B02727E1E72979500A30D9E /* Launch.mov in Resources */,
 				6B0272661E6EB51C00A30D9E /* PYSearchResourceCell.xib in Resources */,
 				6B8812C31E76396B007A435A /* YQSlideMenuImages.xcassets in Resources */,
 				6B25B9F01E63C25B008BC23F /* LaunchScreen.storyboard in Resources */,
 				6B25B9ED1E63C25B008BC23F /* Assets.xcassets in Resources */,
+				6BC163631E81738600765286 /* Launch.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

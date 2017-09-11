@@ -30,7 +30,7 @@
     // 计算cell高度
     NSString *titleText = [NSString stringWithFormat:@"%@ (@%@)", _desc, self.who];
     // 计算高度
-    CGSize titleSize = [titleText sizeWithMaxWidth:[UIScreen mainScreen].bounds.size.width -40 -20 font:[UIFont preferredFontForTextStyle:UIFontTextStyleTitle3]];
+    CGSize titleSize = [titleText sizeWithMaxWidth:[UIScreen mainScreen].bounds.size.width -40 -20 font: [UIFont systemFontOfSize:22]]; //[UIFont preferredFontForTextStyle:UIFontTextStyleTitle3] ios9 才能用
     
     // 计算图片高度
     CGFloat imagesViewH = -10;
